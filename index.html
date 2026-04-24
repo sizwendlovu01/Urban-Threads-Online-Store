@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threads | Streetwear</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Urban<span>Threads</span></a>
+        <div class="nav-links">
+            <span id="user-info"></span>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html" id="cart-link" style="display:none;">Cart</a>
+            <a href="login.html" id="login-link">Login</a>
+            <button id="logout-btn" class="btn btn-outline" style="display:none;">Logout</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Street Style</h1>
+            <p>Discover the latest drop of premium streetwear basics.</p>
+            <a href="shop.html" class="btn">Shop New Arrivals</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=600&auto=format&fit=crop" alt="Hoodies" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Hoodies</h3>
+                    <a href="shop.html" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=600&auto=format&fit=crop" alt="T-Shirts" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">T-Shirts</h3>
+                    <a href="shop.html" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop" alt="Sneakers" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Sneakers</h3>
+                    <a href="shop.html" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load firebase config and shared auth -->
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

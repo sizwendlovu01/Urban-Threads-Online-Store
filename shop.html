@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Urban Threads</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Urban<span>Threads</span></a>
+        <div class="nav-links">
+            <span id="user-info"></span>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html" id="cart-link" style="display:none;">Cart</a>
+            <a href="login.html" id="login-link">Login</a>
+            <button id="logout-btn" class="btn btn-outline" style="display:none;">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">All Products</h2>
+        <div id="product-list" class="product-grid">
+            <p style="text-align: center; width: 100%; color: var(--text-secondary);">Loading products...</p>
+        </div>
+    </div>
+
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/shop.js"></script>
+</body>
+</html>
